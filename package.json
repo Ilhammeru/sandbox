@@ -1,0 +1,19 @@
+{
+  "name": "backend-objection",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "migrate": "npx knex migrate:latest --knexfile ./db/knexfile.js",
+    "down": "npx knex migrate:down --knexfile ./db/knexfile.js",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "knex": "^0.95.15",
+    "morgan": "~1.9.1",
+    "objection": "^3.0.1",
+    "pg": "^8.7.1"
+  }
+}
